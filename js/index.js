@@ -87,3 +87,16 @@ const middleBottomPara = document.querySelectorAll('.bottom-content .text-conten
 middleBottomPara[0].innerText = siteContent['main-content']['services-content'];
 middleBottomPara[1].innerText = siteContent['main-content']['product-content'];
 middleBottomPara[2].innerText = siteContent['main-content']['vision-content'];
+
+// Section Contact//
+const contact = document.querySelector('.contact h4');
+contact.innerText = siteContent['contact']['contact-h4'];
+
+const contactInfo = document.querySelectorAll('.contact p');
+contactInfo[0].innerText = siteContent['contact']['address'];
+contactInfo[1].innerText = siteContent['contact']['phone'];
+contactInfo[2].innerText = siteContent['contact']['email'];
+
+// Footer //
+const footer = document.querySelector('footer p');
+footer.innerText = siteContent['footer']['copyright']
