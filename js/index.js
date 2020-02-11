@@ -100,3 +100,24 @@ contactInfo[2].innerText = siteContent['contact']['email'];
 // Footer //
 const footer = document.querySelector('footer p');
 footer.innerText = siteContent['footer']['copyright']
+
+// Nav Color Change //
+links.forEach(item => {
+  item.style.color = 'green';
+});
+
+// New Nav Content //
+const home = document.createElement('a');
+home.textContent = 'Home';
+const googleSearch = document.createElement('a');
+googleSearch.textContent = 'Google';
+const navBar = document.querySelector('nav');
+navBar.prepend(home);
+navBar.appendChild(googleSearch);
+
+// Change All P's font color //
+const paras = document.querySelectorAll('.main-content p');
+paras.forEach(item => {
+  item.style.color = 'green';
+  item.style.fontWeight = 'bold';
+});
