@@ -110,7 +110,7 @@ links.forEach(item => {
 const home = document.createElement('a');
 home.textContent = 'Home';
 const googleSearch = document.createElement('a');
-googleSearch.textContent = 'Google';
+googleSearch.textContent = 'Google Us!';
 const navBar = document.querySelector('nav');
 navBar.prepend(home);
 navBar.appendChild(googleSearch);
@@ -121,3 +121,28 @@ paras.forEach(item => {
   item.style.color = 'green';
   item.style.fontWeight = 'bold';
 });
+
+// Made The Google Us link take you to google //
+const navLast = document.querySelectorAll('a');
+navLast[7].href = 'https://www.google.com/search?sxsrf=ACYBGNQbwIqCXOae4d47avIscJU-GNl-GQ%3A1581385348199&source=hp&ei=hAZCXtbGCLGxytMPz_m2mAw&q=lambda+school&oq=lambda+school&gs_l=psy-ab.3..35i39l3j0l7.1160.4878..5193...1.0..0.93.903.15......0....1..gws-wiz.......0i131j0i22i30.4lQmJ2ZW684&ved=0ahUKEwjWmLe_r8jnAhWxmHIEHc-8DcMQ4dUDCAg&uact=5';
+
+const newLinks = document.querySelectorAll('a');
+newLinks.forEach(item => {
+  item.style.color = 'green';
+  item.style.fontStyle = 'italic';
+  item.style.textDecoration = 'underline';
+});
+
+let test = document.getElementById("test");
+  
+// This handler will be executed every time the cursor
+// is moved over a different list item
+test.addEventListener("mouseover", function( event ) {   
+  // highlight the mouseover target
+  event.target.style.color = "blue";
+
+  // reset the color after a short delay
+  setTimeout(function() {
+    event.target.style.color = "green";
+  }, 1000);
+}, false);
